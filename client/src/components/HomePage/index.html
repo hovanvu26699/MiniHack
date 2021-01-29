@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+  <title>HomePage</title>
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <div class="logo">
+        <img src="../../assets/img/facebook-png.png" alt="img">
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <input id="search" type="text" class="form-control" placeholder="Tìm kiếm trên Facebook">
+      </div>
+    </div>
+    <div class="center">
+      <div class="icons">
+        <div><a><i class='fas fa-home' style='font-size:30px; color: blue;'></i></a></div>
+        <div><a><i class="fa fa-youtube-play"></i></a></div>
+        <div><a><i class="fa fa-youtube-play"></i></a></div>
+        <div><a><i class="fa fa-youtube-play"></i></a></div>
+        <div><a><i class="fa fa-youtube-play"></i></a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="img">
+        <img src="../../assets/img/worm.jpg" alt="">
+        <span class="nickname">Hello</span>
+      </div>
+      <div class="icon-r">
+        <a><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <div class="icon-r">
+        <a><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <div class="icon-r">
+        <a><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <div class="icon-r dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+            class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path
+              d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg> -->
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-container">
+    <aside class="groups">
+      <div class="accountName">
+        <img src="../../assets/img/tet.jpg" alt="img">
+        <span>Vũ Hồ</span>
+      </div>
+
+      <div class=""></div>
+
+      <div class="groups-label">
+        <h5>Nhóm của bạn</h5>
+      </div>
+      <div class="groups-list">
+        <div class="groups-detail">
+          <img src="../../assets/img/cat.jpg" alt="img">
+          <span>Tên nhóm nè</span>
+        </div>
+        <div class="groups-detail">
+          <img src="../../assets/img/cat.jpg" alt="img">
+          <span>Tên nhóm nè</span>
+        </div>
+        <div class="groups-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <span>Tên nhóm nè</span>
+        </div>
+        <div class="groups-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <span>Tên nhóm nè</span>
+        </div>
+        <div class="groups-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <span>Tên nhóm nè</span>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn col-6 btn-primary" type="button">Button</button>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="stories">
+        <div class="stories-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <div class="stories-name">name</div>
+        </div>
+        <div class="stories-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <div class="stories-name">name</div>
+        </div>
+        <div class="stories-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <div class="stories-name">name</div>
+        </div>
+        <div class="stories-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <div class="stories-name">name</div>
+        </div>
+        <div class="stories-detail">
+          <img src="../../assets/img/cat.jpg" alt="">
+          <div class="stories-name">name</div>
+        </div>
+        <div class="arrow-icon"><a class="next">&#10095;</a></div>
+      </div>
+
+      <div class="postsNew">
+        <div class="part-content">
+          <img src="../../assets/img/worm.jpg" alt="">
+          <button type="button" class="form-control" data-toggle="modal" data-target="#myModal">Bạn đang nghĩ
+            gì?</button>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                  <h4 class="modal-title" style="color: black;">Tạo bài viết</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <!-- <label for="">tiêu đề</label>
+                          <input class="form-control" type="text" id="title-post"> -->
+                  <label for="" style="color: black;">Nội Dung</label>
+                  <textarea class="form-control" name="" id="content-post" cols="15" rows="10"></textarea>
+                  <div class="form-group">
+                    <label for="sel1" style="color: black;">Tác Giả:</label>
+                    <select type="text" class="form-control" id="sel1">
+
+                    </select>
+
+
+                  </div>
+                  <div class="text-center mt-5">
+                    <button class="btn btn-success btn-post" data-dismiss="modal">Đăng</button>
+                  </div>
+                </div>
+
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-danger"
+                              data-dismiss="modal">Close</button>
+                      </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+        <div class="path">
+          <div>
+            <a><i class="fa fa-youtube-play"></i></a>
+            <span>Ảnh/Video</span>
+          </div>
+          <div><a><i class="fa fa-youtube-play"></i></a>
+            <span>Gắn thẻ bạn bè</span>
+          </div>
+          <div>
+            <a><i class="fa fa-youtube-play"></i></a>
+            <span>Cảm xúc/Hoạt động</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="create">
+        <div class="Tao">
+          <a><i class="fa fa-youtube-play"></i></a>
+          <span>Tạo phòng hợp mặt</span>
+        </div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div><img src="../../assets/img/cat.jpg" alt=""></div>
+        <div class="point2"><a class="next">&#10095;</a></div>
+      </div>
+
+      <div class="post">
+        <!-- <div class="content-main">
+          <div class="author">
+            <div class="author-main">
+              <a href="#"><img src="../../assets/images/../../assets/img/co.jpg" alt=""></a>
+              <a href="#">
+                <span class="text-black">Hello</span>
+              </a>
+            </div>
+            <div class="author-status">
+              <div><span class="status">Xin chào thế giới</span></div>
+              <img src="../../assets/img/cat.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="reactions">
+            <div class="reactions-list">
+              <div class="reaction">
+                <div>
+                  <span>100k</span>
+                  <img src="../../assets/img/linke.png" alt="icon">
+                </div>
+              </div>
+              <div class="reaction">
+                <div>
+                  <span>100k</span>
+                  <img src="../../assets/img/linke.png" alt="icon">
+                </div>
+              </div>
+              <div class="reaction">
+                <div>
+                  <span>100k</span>
+                  <img src="../../assets/img/linke.png" alt="icon">
+                </div>
+              </div>
+              <div class="reaction">
+                <div>
+                  <span>100k</span>
+                  <img src="../../assets/img/linke.png" alt="icon">
+                </div>
+              </div>
+            </div>
+            <div class="number-of-comments">
+              <span>150k bình luận</span>
+            </div>
+          </div>
+
+          <div class="comments">
+            <div class="input-comment">
+              <img src="../../assets/img/co.jpg" alt="icon">
+              <input type="text" name="" class="cmt" placeholder="Viết bình luận ...">
+              <button>121321312</button>
+            </div>
+            <div class="list-comment">
+              <div class="comment">
+                <img src="../../assets/img/co.jpg" alt="icon">
+                <div>
+                  <div class="content-cmt">
+                    <span>Thomas</span>
+                    <p>Ôi các bạn ơi.</p>
+                  </div>
+                  <div class="tuongtac">
+                    <a href="#">Thích</a>
+                    <span>&#183;</span>
+                    <a href="#">Trả lời</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <aside class="side-right">
+      <h6>Người liên hệ</h6>
+      <div class="list-friend">
+        <!-- <div class="friend">
+          <img src="../../assets/img/worm.jpg" alt="">
+          <span class="nick" style="color: aliceblue;">Hello</span>
+        </div>
+        <div class="friend">
+          <img src="../../assets/img/worm.jpg" alt="">
+          <span class="nick" style="color: aliceblue;">Hello</span>
+        </div>
+        <div class="friend">
+          <img src="../../assets/img/worm.jpg" alt="">
+          <span class="nick" style="color: aliceblue;">Hello</span>
+        </div>
+        <div class="friend">
+          <img src="../../assets/img/worm.jpg" alt="">
+          <span class="nick" style="color: aliceblue;">Hello</span>
+        </div> -->
+      </div>
+    </aside>
+  </main>
+
+
+
+  <!-- Import depedencies -->
+  <script src="../../libs/jquery/jquery-3.5.1.js"></script>
+  <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script>
+
+  <!-- jQuery -->
+  <script>
+
+  </script>
+</body>
+
+</html>

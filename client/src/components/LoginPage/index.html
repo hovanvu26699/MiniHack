@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- <div class="row"> -->
+    <div class="side-left">
+      <div><img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" id="logo"></div>
+      <div class="text">
+        <p id="line1">Đăng nhập gần đây</p>
+        <p id="line2">Nhấp vào ảnh của bạn hoặc thêm tài khoản.</p>
+      </div>
+      <div class="account">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/img/worm.jpg" alt="Card image" style="width: 100%;">
+          <div class="card-body">
+            <span>Kitty</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="../../assets/img/dau-cong.png" alt="Card image" id="sym">
+          </div>
+          <div class="card-body">
+            <span style="color: blue;">Thêm tài khoản</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side-right">
+      <div class="form">
+        <input class="form-control form-control-lg" type="text" id="emailInput" aria-label=".form-control-lg example"
+          placeholder="Email hoặc số điện thoại">
+        <input class="form-control form-control-lg" type="text" id="passwordInput" aria-label=".form-control-lg example"
+          placeholder="Mật khẩu">
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-primary login">Đăng nhập</button>
+        </div>
+        <a href="#">Quên mật khẩu?</a>
+        <hr width="90%" align="center" />
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn signup" type="button" data-toggle="modal" data-target="#myModal">Tạo tài khoản mới</button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content" style="width: 430px;">
+                <div class="modal-header">
+                  <div>
+                    <h2>Đăng Ký</h2>
+                    <span>Nhanh chóng và dễ dàng</span>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <input type="text" class="form-control" id="lastName" placeholder="Họ">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" class="form-control" id="firstName" placeholder="Tên">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="email" placeholder="Số di động hoặc email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="password" placeholder="Mật khẩu mới ">
+                  </div>
+                  <div class="form-group date-select">
+                    <span>Ngày sinh</span>
+                    <div class="col-dv-right row birthday form-control-lg">
+                      <select id="day" class="form-control col-3">
+                      </select>
+                      <select id="month" class="col-4 form-control">
+                      </select>
+                      <select id="year" class="col-3 form-control">
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group gender-select">
+                    <span>Giới tính</span>
+                    <div class="row">
+                      <div class="col-3 male">
+                        <span>Nam</span>
+                        <input type="radio" id="male" name="gender" value="male">
+                      </div>
+                      <div class="female col-3">
+                        <span>Nữ</span>
+                        <input type="radio" id="female" name="gender" value="female">
+                      </div>
+                      <div class="col-3 other">
+                        <span>Tùy chỉnh</span>
+                        <input type="radio" id="other" name="gender" value="other">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group vocative">
+                    <div class="col-lg-12 col-dv-right row vocative-select">
+                      <select id="vocative-detail" class="form-control" style="color: black;">
+                        <option selected="1" value="" disabled="1">Chọn đại từ nhân xưng</option>
+                        <option value="1">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!"</option>
+                        <option value="2">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!"</option>
+                        <option value="6">Họ: "Chúc họ sinh nhật vui vẻ!"</option>
+                      </select>
+                    </div>
+                    <span>Danh xưng của bạn hiển thị với tất cả mọi người.</span>
+                    <input type="text" class="inputtext _58mg _5dba _2ph- col-lg-12 form-control"
+                      placeholder="Giới tính (Không bắt buộc)" id="u_2_q" disabled>
+                  </div>
+                  <div class="form-group text-end">
+                    <span>Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách
+                        dữ liệu</a> và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn có thể nhận được thông báo
+                      của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn" data-dismiss="modal">Đăng ký</button> -->
+                  <div class="col-12 btn-sg">
+                    <button type="button" class="btn  btn-lg" id="signupButton">Đăng
+                      ký</button>
+                  </div>
+                  <!-- data-dismiss="modal" -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p><a href="#">Tạo Trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.</p>
+    </div>
+    <!-- </div> -->
+  </div>
+
+  <footer>
+    <div class="end">
+      <p class="line-top">
+        Tiếng Việt <a href="">English (UK)</a> <a href="">中文(台灣)</a> <a href="">日本語</a> <a href="">한국어</a> <a
+          href="">ภาษาไทย</a> <a href="">Français (France)</a> <a href="">Español</a> <a href="">Português (Brasil)</a>
+        <a href="">Deutsch</a> <a href="">Italiano</a>
+      </p>
+      <hr>
+      <p class="line-bottom">
+        <a href="">Đăng ký</a> <a href="">Đăng nhập</a> <a href="">Messenger</a> <a href="">Facebook Lite</a>
+        <a href="">Watch</a> <a href="">Danh bạ</a> <a href="">Trang</a> <a href="">Hạng mục Trang</a> <a href="">Địa
+          điểm</a> <a href="">Trò chơi</a> <a href="">Vị trí</a> <a href="">Market place</a> <a href="">Pay</a> <a
+          href="">Nhóm</a> <a href="">Việc làm</a> <a href="">Oculus</a> <a href="">Portal</a> <a href="">Instagram</a>
+        <a href="">Địa phương</a> <a href="">Chiến dịch gây quỹ</a> <a href="">Dịch vụ</a> <a href="">Trung tâm thông
+          tin bỏ phiếu</a> <a href="">Giới thiệu</a> <a href="">Tạo quảng cáo</a> <a href="">Tạo Trang</a> <a
+          href="">Nhà phát
+          triển</a> <a href="">Tuyển dụng</a> <a href="">Quyền riêng tư</a> <a href="">Cookie</a> <a href="">Lựa chọn
+          quảng cáo</a> <a href="">Điều khoản</a> <a href="">Trợ giúp</a> <a href="">Cài đặt</a> <a href="">Nhật ký hoạt
+          động</a>
+      </p>
+      <p>
+        Facebook © 2021
+      </p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Import depedencies -->
+  <script src="../../libs/jquery/jquery-3.5.1.js"></script>
+  <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      function getDate() {
+        for (let i = 1; i <= 31; i++) {
+          $('#day').append(`
+          <option value="${i}">${i}</option>
+          `)
+        }
+
+        for (let i = 1; i <= 12; i++) {
+          $('#month').append(`
+          <option value="${i}">Tháng ${i}</option>
+          `)
+        }
+
+        for (let i = 1900; i <= 2021; i++) {
+          $('#year').append(`
+          <option value="${i}" selected="1">${i}</option>
+          `)
+        }
+      }
+      getDate()
+
+      //get
+      $('.login').click(function () {
+        const email = $('#emailInput').val()
+        const password = $('#passwordInput').val()
+        // kiểm tra email
+        if (!email) {
+          $('.alert').remove()
+          $('.container-fluid').before('<div class="alert alert-warning" role="alert">Email Invalid</div>')
+          return
+        }
+        // kiểm tra password
+        if (!password) {
+          $('.alert').remove()
+          $('.container-fluid').before('<div class="alert alert-warning" role="alert">Password Invalid</div>')
+          return
+        }
+
+        $.ajax(
+          {
+            url: "http://localhost:3000/login",
+            data: JSON.stringify({
+              email,
+              password
+            }),
+            type: 'POST',
+            contentType: 'application/json'
+          }).done(function (data) {
+            if (data.status === 'error') {
+              $('.alert').remove()
+              $(".container-fluid").before(`<div class="alert alert-danger" role="alert">${data.message}</div>`)
+            } else {
+              window.location.replace('http://127.0.0.1:5501/client/src/components/HomePage/index.html')
+            }
+          })
+      })
+
+      // post
+      $('#signupButton').click(function () {
+        // window.location.replace('http://127.0.0.1:5500/client/src/components/SignupPage/index.html')
+
+        const lastName = $('#lastName').val()
+        const firstName = $('#firstName').val()
+        const email = $('#email').val()
+        const password = $('#password').val()
+        const gender = $("input[name='gender']:checked").val();
+
+        let day = $('#day').val()
+        let month = $('#month').val()
+        let year = $('#year').val()
+        let birthday = year + '-' + month + '-' + day
+
+        if (!lastName) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng điền Họ</div>')
+          return
+        }
+
+        if (!firstName) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng điền Tên</div>')
+          return
+        }
+
+        if (!email) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng điền Email</div>')
+          return
+        }
+
+        if (!password) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng điền Password</div>')
+          return
+        }
+
+        if (!birthday) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng điền Ngày sinh</div>')
+          return
+        }
+
+        if (!gender) {
+          $('.alert').remove()
+          $('#myModal').prepend('<div class="alert alert-warning" role="alert">Vui lòng chọn giới tính</div>')
+          return
+        }
+
+        $.ajax(
+          {
+            url: "http://localhost:3000/users",
+            data: JSON.stringify({
+              email,
+              password,
+              lastName,
+              firstName,
+              email,
+              password,
+              birthday,
+              gender
+            }),
+            type: 'POST',
+            contentType: 'application/json'
+          }).done(function (data) {
+            if (data.isSuccess) {
+              window.location.replace('http://127.0.0.1:5501/client/src/components/LoginPage/index.html')
+              console.log("")
+            } else {
+              $('.alert').remove()
+              $('.container-fluid').before(`<div class="alert alert-warning" role="alert">${data.message}</div>`)
+            }
+          })
+
+      })
+    })
+  </script>
+</body>
+
+</html>
